@@ -143,6 +143,8 @@ abstract class AbstractKotlinWatchFace : CanvasWatchFaceService() {
             setWatchFaceStyle(
                     WatchFaceStyle.Builder(this@AbstractKotlinWatchFace)
                         .setAcceptsTapEvents(true)
+                        .setHideStatusBar(true)
+                        .setShowUnreadCountIndicator(true)
                         .build()
             )
 
